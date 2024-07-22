@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(199, 197, 197);
+        }
+        .main {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .main h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .main input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 20px ;
+            border:none;
+        }
+        .main p {
+            font-size: 22px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .main ul {
+            list-style: none;
+        }
+        .main ul li {
+            border: 1px solid rgb(112, 112, 112);
+            height: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .valid {
+            background-color: rgba(0, 128, 0, 0.39);
+            color: white;
+        }
+        /* .invalid {
+            background-color: red;
+            color: white;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Password Validation</h1>
+        <input type="text" name="" id="passInp" placeholder="Enter password">
+        <p>Password should be:</p>
+        <ul>
+            <li id="eightChar">Contain at least 8 characters</li>
+            <li id="lowerCase">Contain at least one lowercase letter</li>
+            <li id="upperCase">Contain at least one uppercase letter</li>
+            <li id="SpecChar">Contain at least one special character</li>
+            <li id="number">Contain at least one number</li>
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
